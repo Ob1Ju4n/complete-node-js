@@ -3,7 +3,7 @@ var middleware = require('./middleware.js');
 var app = express();
 
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 // Middleware def goes first:
 // app.use(middleware.requireAuthentication);
